@@ -1,0 +1,293 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header Navigation */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#home {
+    text-align: center;
+    padding: 50px 20px;
+    animation: fadein 2s ease-in-out;
+}
+
+.intro h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.intro h2 {
+    font-size: 3rem;
+    color: #00f0ff;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.intro span {
+    color: #00f0ff;
+}
+
+/* Buttons */
+.buttons {
+    margin: 20px 0;
+}
+
+.buttons .btn, .buttons .btn-outline {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.buttons .btn {
+    background-color: #00f0ff;
+    color: #000;
+    margin-right: 10px;
+}
+
+.buttons .btn-outline {
+    border: 2px solid #00f0ff;
+    color: #00f0ff;
+}
+
+.buttons .btn:hover, .buttons .btn-outline:hover {
+    background-color: #00c5e6;
+    color: #fff;
+}
+
+/* Profile Picture */
+.profile-pic {
+    margin: 40px auto 0;
+    width: 150px;
+    height: 150px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    overflow: hidden;
+    border: 5px solid #00f0ff;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin: 0 12rem;
+}
+
+.container h2 {
+    text-align: center;
+    color: #00c5e6;
+    font-size: 2rem;
+    margin: 20px;
+}
+
+.container p {
+    margin-bottom: 100px;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+/* Vision & Mission */
+.vision-mission {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.vision-mission .card {
+    width: 40%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.vision-mission .card i {
+    font-size: 40px;
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+.vision-mission .card h3 {
+    font-size: 24px;
+    color: #00c5e6;
+}
+
+.vision-mission .card p {
+    font-size: 16px;
+    color: white;
+}
+
+/* Skills Section */
+.skills-container {
+    margin: 0 auto; /* Center container */
+    max-width: 800px;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #00ff88;
+    margin-top: 50px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+hr {
+    width: calc(var(--progress-width, 0%));
+}
+
+/* General Progress Bar */
+.progress-bar {
+    width: 100%;
+    background-color: #444;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative; /* Ensure proper alignment for nested elements */
+}
+
+/* Progress Text and Color */
+.progress {
+    height: 20px;
+    background-color: #00ff88;
+    text-align: right;
+    line-height: 20px;
+    padding-right: 5px;
+    color: #00c5e6;
+    font-weight: bold;
+}
+
+/* Set progress width */
+.progress-bar-html {
+    --progress-width: 100%;
+}
+
+.progress-bar-css {
+    --progress-width: 80%;
+}
+
+.progress-bar-js {
+    --progress-width: 70%;
+}
+
+.progress-bar-react {
+    --progress-width: 60%;
+}
+
+.progress-bar-python {
+    --progress-width: 75%;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: white;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-link {
+  margin: 0 10px;
+  color: #555;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #000;
+}
